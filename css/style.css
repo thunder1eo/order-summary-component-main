@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.01em;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Red Hat Display", sans-serif;
+    background: url("./images/pattern-background-desktop.svg") no-repeat;
+    background-size: 100%;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.card__content h1 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 1.75rem;
+}
+
+.price h2 {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+}
+img {
+    max-width: 100%;
+}
+
+.card {
+    max-width: 28rem;
+    width: 90%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.card__content {
+    padding: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.price__details {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    text-align: left;
+    background-color: hsl(225, 100%, 98%);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.price__details a {
+    margin-left: auto;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+.icon {
+    position: relative;
+    top: 2px;
+}
+
+.cta {
+    background: hsl(245, 75%, 52%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 10px 20px hsl(245, 75%, 52%, 0.3);
+    transition: all ease 0.3s;
+}
+
+.cta:hover {
+    background: hsl(245, 50%, 60%);
+    transition: all ease 0.3s;
+}
+a {
+    transition: all ease 0.3s;
+}
+a:hover {
+    color: hsl(245, 50%, 60%);
+    text-decoration: none;
+    transition: all ease 0.3s;
+}
+
+.cta-danger,
+p {
+    color: hsl(224, 23%, 55%);
+    border: none;
+    background: none;
+    line-height: 1.5em;
+    transition: all ease 0.3s;
+}
+
+.cta-danger:hover {
+    color: hsl(223, 47%, 23%);
+    transition: all ease 0.3s;
+}
+
+@media (max-width: 500px) {
+    body {
+        background-image: url("./images/pattern-background-mobile.svg") no-repeat;
+        background-size: 100%;
+        background-color: hsl(225, 100%, 94%);
+    }
+    .card__content {
+        padding: 1.5rem;
+    }
+    .price__details {
+        padding: 1rem;
+    }
+}
